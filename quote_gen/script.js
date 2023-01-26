@@ -10,7 +10,6 @@ const twitterBtn = document.getElementById("twitter");
 const newQuoteBtn = document.getElementById("new-quote");
 const loader = document.getElementById("loader");
 const body = document.getElementById("body");
-const span = document.getElementsByTagName("span");
 
 let apiQuotes = [];
 //show loading
@@ -35,18 +34,6 @@ const arr1 = [
   "bg_9",
   "bg_10",
 ];
-const color = [
-  "red",
-  "blue",
-  "green",
-  "black",
-  "greenyellow",
-  "purple",
-  "maroon",
-  "yellow",
-  "aqua",
-  "hotpink",
-];
 
 // show new quote
 // function newQuote() {
@@ -67,7 +54,6 @@ function newQuote() {
 
   if (!quote.author) {
     authorText.textContent = "Unknown";
-    authorText.classList.add;
   } else {
     authorText.textContent = quote.author;
   }
@@ -86,13 +72,12 @@ function newBackground() {
 
   let a = arr1[Math.floor(Math.random() * 10)];
   classes.value = [];
-  span.style.cssText = "background-color: red; color: white";
 
   console.log(classes);
 
   classes.add(a);
 
-  // console.log(classes.value[0]);
+  console.log(classes.value[0]);
 }
 
 // Math.random 0 to 1
