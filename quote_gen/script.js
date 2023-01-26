@@ -119,4 +119,4 @@ getQuotes();
 // doing this with quotes stored in another file
 // api may change or shut down at time be carefull
 
-// dom manipulation
+// dom manipulationfdf
